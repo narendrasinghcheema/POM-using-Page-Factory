@@ -10,6 +10,8 @@ public class Helper {
 	public static WebDriver driver;
 	public static WebDriver Select_Browser(String B_Name, String URL)
 	{
+		//====this code will check the requred browser Name and it will open the same browser====
+		
 		if (B_Name.equalsIgnoreCase("Chrome"))
 		{
 			driver = new ChromeDriver();
@@ -20,5 +22,7 @@ public class Helper {
 		driver.manage().window().maximize();
 		driver.get(URL);
 		return driver;
+		
+		//====end of the same as keep as static====
 	}
 }
