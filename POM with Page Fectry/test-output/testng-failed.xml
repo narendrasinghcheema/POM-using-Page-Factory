@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="login_Test(failed)">
+    <parameter name="validuser_N" value="student"/>
+    <parameter name="inuser_P" value="jone@123"/>
+    <parameter name="validuser_P" value="Password123"/>
+    <parameter name="inuser_N" value="jone"/>
+    <classes>
+      <class name="dummy.Dummy">
+        <methods>
+          <include name="test" invocation-numbers="0"/>
+          <include name="test2" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- dummy.Dummy -->
+    </classes>
+  </test> <!-- login_Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
